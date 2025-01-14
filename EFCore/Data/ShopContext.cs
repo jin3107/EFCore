@@ -12,6 +12,7 @@ namespace EFCore.Data
     public class ShopContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         private const string connectionString = @"Server=localhost;Database=ShopData;User=root;Password=Chuong@030905;";
 
