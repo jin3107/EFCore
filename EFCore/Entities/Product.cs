@@ -20,9 +20,10 @@ namespace EFCore.Entities
 
         public decimal Price { get; set; }
 
+        [ForeignKey("Category")]
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 
-        public void PrintInfo() => Console.WriteLine($"\n{Id} - {Name} - {Price}");
+        public void PrintInfo() => Console.WriteLine($"\n{Id} - {Name} - {Price}\n");
     }
 }
