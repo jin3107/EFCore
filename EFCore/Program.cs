@@ -49,5 +49,5 @@ static void InsertData()
 
 
 //DropDatabase();
-//CreateDatabase();
-InsertData();
+CreateDatabase();
+//InsertData();
